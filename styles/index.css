@@ -1,0 +1,26 @@
+@import url("./header-footer.css");
+@import url("./posts.css");
+@import url("./about.css");
+@import url("./materials.css");
+
+body {
+    margin: 0px;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+body > div {
+    padding: 20px 50px 20px 50px;
+}
+
+body a {
+    /* text-decoration: none; */
+    color: inherit;
+}
+
+#welcome {
+    background: linear-gradient(to right, lightgreen, rgb(170, 214, 190));
+    color: black;
+}

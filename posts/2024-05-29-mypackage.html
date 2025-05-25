@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My \(\LaTeX\) Package</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="dist/client-bundle.js" defer></script>
+    <script src="dist/mathjax-config.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script src="https://kit.fontawesome.com/ffa2ffc548.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/circle-user-solid.svg" type="image/svg">
+</head>
+
+<body>
+    <nav></nav>
+    <p>&lt;a href=&quot;https://raw.githubusercontent.com/Tristanchaang/tristanchaang.github.io/main/downloads/natsirt.zip&quot; download=&quot;download&quot;&gt;Click here&lt;/a&gt; to download the zip file that contains 'natsirt.cls'.</p>
+<p>I have modified the MIT Course 6 LaTeX Package to one that is suited for my convenience and purposes. For an example of a product of this package, see my <a href="https://tristanchaang.github.io/notes/real_analysis">Real Analysis Notes</a> and <a href="https://tristanchaang.github.io/notes/topology">Topology Notes</a>.</p>
+<p>To use the package on Overleaf, upload the .cls file onto your project, and type the following into your .tex file:</p>
+<blockquote>
+<p>\documentclass{natsirt}</p>
+<p>\title{...}</p>
+<p>\author{...}</p>
+<p>\subtitle{...} % optional</p>
+<p>\begin{document}</p>
+<p>...</p>
+<p>\end{document}</p>
+</blockquote>
+<h2>Extra Features</h2>
+<h1>New Chapter and Subchapters</h1>
+<p>\chapter{} and \chapterpart{} will create chapter titles. \chapter{} will create a page break for every subsequent chapter.</p>
+<h1>New Problem and Subproblems (for Psets)</h1>
+<p>\problem{Num}{Collaborators} and \problempart{} will create problem titles. \problem{} will create a page break for every subsequent problem.</p>
+<h1>Blue, Green, Red and White Boxes</h1>
+<p>The environment commands \begin{bluebox}, \begin{greenbox}, \begin{redbox} and \begin{whitebox} create a colored box in which you can type paragraphs.</p>
+<h1>Brackets</h1>
+<p>These brackets support automatic size correction. E.g. \pr{\sum} will be $\left(\sum\right)$ instead of $(\sum)$</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">\pr{...}</th>
+<th style="text-align:center">\br{...}</th>
+<th style="text-align:center">\ar{...}</th>
+<th style="text-align:center">\set{...}</th>
+<th style="text-align:center">\abs{...}</th>
+<th style="text-align:center">\norm{...}</th>
+<th style="text-align:center">\fl{...}</th>
+<th style="text-align:center">\ce{...}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$(...)$</td>
+<td style="text-align:center">$[...]$</td>
+<td style="text-align:center">$\langle ... \rangle$</td>
+<td style="text-align:center">$\{...\}$</td>
+<td style="text-align:center">$\mid ... \mid$</td>
+<td style="text-align:center">$\Vert ... \Vert$</td>
+<td style="text-align:center">$\lfloor...\rfloor$</td>
+<td style="text-align:center">$\lceil...\rceil$</td>
+</tr>
+</tbody>
+</table>
+<h1>Function Shorthands</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">\prb{...}</th>
+<th style="text-align:center">\epv{...}</th>
+<th style="text-align:center">\var{...}</th>
+<th style="text-align:center">\Re{...}</th>
+<th style="text-align:center">\Im{...}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$\mathbb{P}[...]$</td>
+<td style="text-align:center">$\mathbb{E}[...]$</td>
+<td style="text-align:center">$\mathbb{V}[...]$</td>
+<td style="text-align:center">$\mathfrak{Re}[...]$</td>
+<td style="text-align:center">$\mathfrak{Im}[...]$</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">\under{abc}{x}</th>
+<th style="text-align:center">\od{a}{b}</th>
+<th style="text-align:center">\pd{a}{b}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$\underset{x}{\mathrm{abc}}$</td>
+<td style="text-align:center">$\frac{\mathrm{d}a}{\mathrm{d}b}$</td>
+<td style="text-align:center">$\frac{\partial a}{\partial b}$</td>
+</tr>
+</tbody>
+</table>
+<h1>Symbols</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">\emp</th>
+<th style="text-align:center">\A,\B,...,\Z</th>
+<th style="text-align:center">\eps</th>
+<th style="text-align:center">\phi</th>
+<th style="text-align:center">\&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$\varnothing$</td>
+<td style="text-align:center">$\mathbb{A},\mathbb{B},\cdots,\mathbb{Z}$</td>
+<td style="text-align:center">$\varepsilon$</td>
+<td style="text-align:center">$\varphi$</td>
+<td style="text-align:center">$\rightarrow$</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">\imply</th>
+<th style="text-align:center">\Imply</th>
+<th style="text-align:center">\iff</th>
+<th style="text-align:center">\Iff</th>
+<th style="text-align:center">\qed</th>
+<th style="text-align:center">\QED</th>
+<th style="text-align:center">\mod{...}</th>
+<th style="text-align:center">\df</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$\Rightarrow$</td>
+<td style="text-align:center">$\Longrightarrow$</td>
+<td style="text-align:center">$\Leftrightarrow$</td>
+<td style="text-align:center">$\Longleftrightarrow$</td>
+<td style="text-align:center">$\square$</td>
+<td style="text-align:center">$\blacksquare$</td>
+<td style="text-align:center">$(\mathrm{mod} \ ...)$</td>
+<td style="text-align:center">$\mathrm{d}$</td>
+</tr>
+</tbody>
+</table>
+<h1>Others</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">\DS</th>
+<th style="text-align:center">\TS</th>
+<th style="text-align:center">\cases{abc\\ xyz\\ ...}</th>
+<th style="text-align:center">\ol{abc}</th>
+<th style="text-align:center">\td{abc}</th>
+<th style="text-align:center">\emph{text}</th>
+<th style="text-align:center">\scr{ABC}</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">\displaystyle</td>
+<td style="text-align:center">\textstyle</td>
+<td style="text-align:center">$\begin{cases}abc \\ xyz\\ \vdots \end{cases}$</td>
+<td style="text-align:center">$\overline{abc}$</td>
+<td style="text-align:center">$\widetilde{abc}$</td>
+<td style="text-align:center"><em><strong>text</strong></em></td>
+<td style="text-align:center">$\mathscr{ABC}$</td>
+</tr>
+</tbody>
+</table>
+<h1>Example</h1>
+<p><code>f_X(x) = \od{}{t}\prb{X\leq t} = \cases{1, &amp; 0\leq x \leq 1 \\ 0, &amp; \text{otherwise}}</code></p>
+<p>$$ f_X(x) = \frac{\mathrm{d}}{\mathrm{d}t}\mathbb{P}[X\leq t] = \begin{cases}1, &amp; 0\leq x \leq 1\ 0, &amp; \text{otherwise}\end{cases} $$</p>
+<p><code>f \in \mathcal{R}(a,b) \iff \under{inf}{a=x_0&lt;\cdots&lt;x_N=b} \sum_{i=1}^{N} (x_i - x_{i-1}) \under{osc}{[x_{i-1}, x_i]} f = 0</code></p>
+<p>$$f \in \mathcal{R}(a,b) \ \Leftrightarrow \ \underset{a=x_0&lt;\cdots&lt;x_N=b}{\mathrm{inf}} \sum_{i=1}^{N} (x_i - x_{i-1}) \underset{[x_{i-1}, x_i]}{\mathrm{osc}} f = 0 $$</p>
+
+    <footer></footer>
+</body>
+</html>

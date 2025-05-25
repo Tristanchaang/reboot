@@ -1,0 +1,21 @@
+#materialWindow {
+    display: flex;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.materialThumbnail {
+    background: linear-gradient(to right, rgb(185, 219, 255), rgb(179, 250, 255));
+    padding: 15px;
+    height: 35px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.materialThumbnail > span {
+    color: black;
+}
