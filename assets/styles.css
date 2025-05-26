@@ -1,0 +1,10 @@
+.boxed {
+    border: 3px solid black;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.click {
+    cursor: pointer;
+}
+
